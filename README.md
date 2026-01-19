@@ -5,6 +5,22 @@ Es un proyecto de replicacion de plantillas de figma para probar nuestras habili
 para verlo localmente, simplemente clic en el enlace proporcionae. o entra en el repositorio, clonalo y en codespaces o visual studio code haz clic derecho en index.html y despliega con live server. o al siguiente enlace:
 https://theswarmedon.github.io/travel-cards-morato-santiago/
 
+estructura de archivos:
+travel-cards-cognom1-cognom2/
+├── index.html
+├── card1.html
+├── card2.html
+├── card3.html
+├── card4.html
+├── README.md
+├── css/
+│   └── styles.css
+└── images/
+    ├── thumb1.png
+    ├── thumb2.png
+    ├── thumb3.png
+    ├── thumb4.png
+
 Autor: Santiago Morato Santiago
 
 prototipos de figma: https://www.figma.com/design/NEzrFd5zvNUGqhA1fnLN1p/travel-cards--Community-?node-id=0-1&p=f&t=xDqEEYoWiRhVrKQZ-0
