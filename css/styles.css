@@ -1,0 +1,279 @@
+* {
+  margin: 0; /*quita margenes por defecto*/
+  padding: 0; /*quita rellenos por defecto*/
+  box-sizing: border-box; /*el borde y relleno cuentan dentro del tamaño total*/
+  font-family: Arial, Helvetica, sans-serif; /*tipografia global*/
+}
+body {
+  background: #e5e5e5; /*fondo gris general*/
+  min-height: 100vh; /*altura minima de toda la pantalla*/
+}
+body.index {
+  display: flex; /*flex para centrar*/
+  justify-content: center; /*centrado horizontal*/
+  padding: 60px 0; /*espacio arriba y abajo*/
+}
+
+.index .page {
+  width: 1200px; /*ancho fijo del contenedor*/
+  background: #ffffff; /*fondo blanco*/
+  padding: 80px; /*relleno interno*/
+  border-radius: 16px; /*bordes redondeados*/
+}
+
+.index .header {
+  display: flex; /*flex para separar*/
+  justify-content: space-between; /*separa titulo y texto*/
+  align-items: baseline; /*alinea el texto a la base*/
+  margin-bottom: 60px; /*separacion de abajo*/
+}
+
+.index .header h1 {
+  font-size: 48px; /*tamaño de letra grande*/
+  color: #111; /*color negro suave*/
+}
+
+.index .student {
+  font-size: 16px; /*tamaño letra alumno*/
+  color: #555; /*color gris*/
+}
+
+.index .grid {
+  display: grid; /*sistema de rejilla*/
+  grid-template-columns: repeat(4, 1fr); /*4 columnas iguales*/
+  gap: 32px; /*espacio entre tarjetas*/
+}
+
+.index .card {
+  background: #fafafa; /*fondo gris claro*/
+  border-radius: 14px; /*bordes redondeados*/
+  padding: 16px; /*relleno interno*/
+  text-decoration: none; /*quita el subrayado*/
+  color: #111; /*color del texto*/
+  display: flex; /*flex vertical*/
+  flex-direction: column; /*elementos en columna*/
+  gap: 14px; /*espacio entre elementos*/
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06); /*sombra suave*/
+}
+
+.index .thumb {
+  width: 100%; /*ancho total*/
+  height: 220px; /*altura fija*/
+  background: #f0f0f0; /*fondo detras de la imagen*/
+  border-radius: 10px; /*bordes redondeados*/
+  overflow: hidden; /*hace que nada pueda salir*/
+  display: flex; /*para centrar la imagen*/
+  align-items: center; /*centrado vertical*/
+  justify-content: center; /*centrado horizontal*/
+}
+
+.index .thumb img {
+  width: 100%; /*ancho completo*/
+  height: 100%; /*alto completo*/
+  object-fit: contain; /*ajusta imagen sin cortar*/
+  padding: 10px; /*margen de seguridad*/
+}
+
+.index .card span {
+  text-align: center; /*texto centrado*/
+  font-size: 15px; /*tamaño de letra*/
+  font-weight: 600; /*letra un poco negrita*/
+}
+/*Centrada vertical y horizontalmente*/
+.vista-detalle {
+  display: flex;             /*Flexbox para el layout del body*/
+  justify-content: center;   /*Centrado horizontal*/
+  align-items: center;       /*Centrado vertical*/
+  background-color: #f5f7fa; /*Color de fondo*/
+  height: 100vh;             /*Altura fija al viewport*/
+  width: 100vw;              /*Ancho fijo al viewport*/
+}
+
+/*tamaño y contenedor*/
+.tarjeta-vuelo {
+  width: 274.51px;
+  height: 125.21px;
+  
+  /*estetica*/
+  background-color: #ffffff;
+  border-radius: 8px;        /*radio de borde*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  
+  /*layout interno*/
+  padding: 14px 18px;        /*padding ajustado para que quepa todo*/
+  display: flex;             /*flexbox vertical*/
+  flex-direction: column;    /*elementos apilados */
+  justify-content: space-between; /*distribuye espacio de arriba y de abajo*/
+}
+
+/*seccion superior */
+.fila-superior {
+  display: flex;             /*flex horizontal*/
+  justify-content: space-between; /*elementos a los extremos*/
+  align-items: flex-start;   /*alineados arriba*/
+}
+
+.etiqueta {
+  display: block;            /*pcupa linea propia*/
+  font-size: 10px;           /*tamaño de tipografia*/
+  color: #6e7a8a;            /*color: gris*/
+  margin-bottom: 2px;        /*espaciado mínimo*/
+  font-weight: 400;
+}
+
+.destino {
+  font-size: 18px;           /*tamaño de tipografia*/
+  color: #0b1e33;            /*color: negro azulado*/
+  font-weight: 700;          /*bold*/
+  line-height: 1.1; /*altura de la linea*/
+  letter-spacing: -0.3px; /*espacio entre letras*/
+}
+
+.contenedor-logo img {
+  height: 24px;              /*logo al tamaño de la targeta*/
+  width: auto;
+  object-fit: contain;
+}
+
+/*seccion inferior*/
+.fila-inferior {
+  display: flex;             /*flex horizontal*/
+  justify-content: space-between; /*extremos opuestos*/
+  align-items: flex-end;     /*alineados de abajo para encuadrar el precio*/
+}
+
+.info-fechas {
+  font-size: 9px;            /*tamaño de la tipografia*/
+  color: #0b1e33;            /*color: negro*/
+  font-weight: 600;          /*semi-bold*/
+}
+
+.info-precio {
+  display: flex;             /*columna para etiqueta y precio*/
+  flex-direction: column;
+}
+
+.alineacion-derecha {
+  text-align: right;         /*alinea "from" a la derecha*/
+}
+
+.precio {
+  font-size: 16px;           /*tamaño de tipografia*/
+  color: #0b1e33;            /*color: azul oscuro*/
+  font-weight: 800;          /*extra-bold*/
+  line-height: 1;            /*el espacio vertical entre lineas*/
+}
+.tarjeta-bus {
+  width: 270.4px;            /*ancho exacto*/
+  height: 123.34px;          /*alto exacto*/
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 14px 18px;
+  display: flex;             /*flexbox vertical*/
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*estilos de texto especificos o compartidos*/
+.etiqueta-gris {
+  display: block;
+  font-size: 10px;             /*tamaño pequeño de la etiqueta*/
+  color: #6e7a8a;            /*color: gris*/
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.titulo-grande {
+  font-size: 20px;           /*un poco mas grande que el de vuelo*/
+  color: #0b1e33;          /*color: negro*/
+  font-weight: 800;          /*para que este en negrita*/
+  line-height: 1.1;
+}
+
+.contenedor-logo-bus img {
+  height: 28px;              /*para que el logo este un poco mas alto*/
+  width: auto; /*ancho automatico*/
+  object-fit: contain; /*ajusta contenido*/
+}
+
+/*parte inferior*/
+.fila-inferior-bus {
+  display: flex;
+  justify-content: space-between; /*para que los datos esten a la izquierda y el boton a la derecha*/
+  align-items: flex-end;     /*alineados a abajo*/
+}
+
+.grupo-datos {
+  display: flex;             /*flex para juntar*/
+  gap: 15px;                 /*espacio entre las columnas*/
+}
+
+.dato-item {
+  display: flex;             
+  flex-direction: column;    /*vertical para que la etiqueta este arriba y el valor abajo*/
+}
+
+.valor-dato {
+  font-size: 12px;             /*tamaño tipografia*/
+  color: #0b1e33;            /*color: negro*/
+}
+
+/*boton del precio*/
+.boton-azul {
+  display: inline-block;
+  padding: 6px 12px;         /*padding ajustado para que quepa todo*/
+  border: 1px solid #00aaff; /*borde azul brillante*/
+  border-radius: 20px;       /*bordes redondos*/
+  color: #00aaff;          /*color de los numeros*/
+  font-size: 12px;           /*tamaño de los numeros*/
+text-decoration: none;       /*no subrayar*/
+}
+.tarjeta-bungalow {
+  width: 302.97px;           /*ancho exacto*/
+  height: 240.96px;          /*alto exacto*/
+  
+  /*imagen de fondo*/
+  background-image: url('../images/bunga.png'); 
+  background-size: cover;    /*la imagen cubre todo su espacio*/
+  background-position: center; /*la imagen se centra*/
+  
+  border-radius: 12px;       /* Bordes redondeados */
+  overflow: hidden;          /*hace que nada pueda salir*/
+  position: relative;        /*posicionar texto*/
+  
+  display: flex;             /*para organizar el texto interior*/
+  align-items: flex-end;     /*el contenido va al fondo*/
+}
+
+.contenido-bungalow {
+  width: 100%;               /*ocupa todo el ancho*/
+  padding: 24px;             /*padding para que todo quepa bien*/
+  display: flex;             /*flex vertical para textos*/
+  flex-direction: column;    
+  gap: 20px;                 /*espacio entre texto*/
+}
+
+.bloque-titulo {
+  display: flex; /*activa flexbox*/
+  flex-direction: column;
+  gap: 8px;                  /*espacio entre titulos*/
+}
+
+.titulo-blanco {
+  font-size: 28px;           /*tamaño grande*/
+  color: #ffffff;            /*blanco puro*/
+  line-height: 1;            /*linea compacta*/
+}
+
+.descripcion-blanca {
+  font-size: 14px;           /*tamaño tipografia*/
+  color: #f0f0f0;          /*color: blanco*/
+  line-height: 1.4;          /*espacio entre lineas*/
+  max-width: 90%;            /*para que no llegue al borde derecho*/
+}
+
+.contador-habitaciones {
+  font-size: 14px;             /*tamaño del contador*/
+  color: #ffffff;            /*color: blanco*/
+}
